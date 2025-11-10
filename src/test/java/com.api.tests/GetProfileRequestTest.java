@@ -1,10 +1,10 @@
 package com.api.tests;
 
 import com.api.base.AuthService;
-import com.api.base.UserProfileManangementService;
+import com.api.base.UserProfileManagementService;
 import com.api.models.request.LoginRequest;
 import com.api.models.response.LoginResponse;
-import com.api.models.response.UserProfleResponse;
+import com.api.models.response.UserProfileResponse;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
@@ -18,12 +18,17 @@ public class GetProfileRequestTest {
         LoginResponse loginResponse = response.as(LoginResponse.class);
         System.out.println(loginResponse.getToken());
 
-        UserProfileManangementService userProfileManangementService =
-                new UserProfileManangementService();
-
+        UserProfileManagementService userProfileManangementService =
+                new UserProfileManagementService();
+//
         response = userProfileManangementService.getProfile(loginResponse.getToken());
+//
+//
+        System.out.println(response.asPrettyString());
 
-       UserProfleResponse userProfleResponse = response.as(UserProfleResponse.class);
+        // deserialize json response
+        // create userProfleResponse
+        UserProfileResponse userProfleResponse = response.as(UserProfileResponse.class);
 
         System.out.println(userProfleResponse.getUsername());
 

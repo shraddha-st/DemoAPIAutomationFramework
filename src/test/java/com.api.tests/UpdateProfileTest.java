@@ -1,11 +1,11 @@
 package com.api.tests;
 
 import com.api.base.AuthService;
-import com.api.base.UserProfileManangementService;
+import com.api.base.UserProfileManagementService;
 import com.api.models.request.LoginRequest;
 import com.api.models.request.UpdateProfileRequest;
 import com.api.models.response.LoginResponse;
-import com.api.models.response.UserProfleResponse;
+import com.api.models.response.UserProfileResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -17,28 +17,29 @@ public class UpdateProfileTest {
     public void updateProfileTest(){
         AuthService authService = new AuthService();
         Response response = authService.login(new LoginRequest("shraddha.qa", "Pass@12345"));
-      LoginResponse loginResponse =  response.as(LoginResponse.class);
+        LoginResponse loginResponse =  response.as(LoginResponse.class);
         System.out.println(response.asPrettyString());
 
-        System.out.println("------------------------------------------------------------------------");
+        System.out.println("----------Get Token-----------------------------------------------------------");
 
-        UserProfileManangementService userProfileManangementService = new UserProfileManangementService();
-        response = userProfileManangementService.getProfile(loginResponse.getToken());
+        UserProfileManagementService userProfileManagementService = new UserProfileManagementService();
+        response = userProfileManagementService.getProfile(loginResponse.getToken());
         System.out.println(response.asPrettyString());
+        UserProfileResponse userProfileResponse = response.as(UserProfileResponse.class);
+        Assert.assertEquals(userProfileResponse.getUsername(), "shraddha.qa", "Incorrect Creds");
 
-       UserProfleResponse userProfleResponse = response.as(UserProfleResponse.class);
+        System.out.println("--------Update Profile-----------------------------------------------------------");
 
-        Assert.assertEquals(userProfleResponse.getUsername(), "shraddha.qa");
-
-        System.out.println("------------------------------------------------------------------------");
 
         UpdateProfileRequest updateProfileRequest = new UpdateProfileRequest.Builder()
-                .firstName("Jass").lastName("Joe")
-                .email("shraddha.st.qa@gmail.com").mobileNumber("9876764677")
+                .firstName("Tess")
+                .lastName("Joe")
+                .email("shraddha.st.qa2@gmail.com")
+                .mobileNumber("9876764677")
                 .build();
 
 
-       response = userProfileManangementService.updateProfile(loginResponse.getToken(), updateProfileRequest);
+       response = userProfileManagementService.updateProfile(loginResponse.getToken(), updateProfileRequest);
         System.out.println(response.asPrettyString());
 
     }

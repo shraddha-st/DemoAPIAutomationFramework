@@ -12,10 +12,10 @@ public class AccountCreationTest {
     public void createAccountTest() {
 
         SignUpRequest signUpRequest = new SignUpRequest.Builder()
-                .userName("Daisu15")
+                .userName("Daisu16")
                 .firstName("Daisy")
                 .lastName("Jone")
-                .email("daisu15@yahoo.com")
+                .email("daisu16@yahoo.com")
                 .passWord("12345678")
                 .mobileNumber("9876543213")
                 .build();

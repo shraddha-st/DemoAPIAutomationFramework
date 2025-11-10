@@ -16,7 +16,6 @@ public Response login(LoginRequest payload){
 }
 
 
-
     public Response reset_password(LoginRequest payload){
         return postRequest(payload, BASE_PATH + "reset-password");
     }

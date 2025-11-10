@@ -6,10 +6,13 @@ import com.api.models.response.LoginResponse;
 import io.restassured.response.Response;
 import org.apache.http.impl.conn.SystemDefaultRoutePlanner;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
+
+@Listeners(com.api.listeners.TestListener.class)
 public class LoginAPITest3 {
 
     @Test(description="verify if login API is working ")
@@ -29,7 +32,7 @@ public class LoginAPITest3 {
         System.out.println(loginResponse.getId());
 
 
-        Assert.assertTrue(loginResponse.getToken() != null);
+        Assert.assertNotNull(loginResponse.getToken());
         Assert.assertEquals(loginResponse.getEmail() , "shraddha.st.qa@gmail.com");
         Assert.assertEquals(loginResponse.getId() , 2737);
 
