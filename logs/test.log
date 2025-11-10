@@ -1,0 +1,166 @@
+16:56:44.156 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+16:56:44.169 [main] INFO  com.api.listeners.TestListener - Started >> loginTest
+16:56:44.169 [main] INFO  com.api.listeners.TestListener - Description>> verify if login API is working 
+16:56:45.037 [main] INFO  com.api.listeners.TestListener - Passed>> loginTest
+16:56:45.037 [main] INFO  com.api.listeners.TestListener - Description>> verify if login API is working 
+16:56:45.038 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
+17:39:39.188 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+17:39:39.200 [main] INFO  com.api.listeners.TestListener - Started >> loginTest
+17:39:39.200 [main] INFO  com.api.listeners.TestListener - Description>> verify if login API is working 
+17:39:39.658 [main] INFO  com.api.filters.LoggingFilter - BASE URI > http://64.227.160.186:8080
+17:39:39.659 [main] INFO  com.api.filters.LoggingFilter - REQUEST HEADER > Accept=*/*
+Content-Type=application/json
+17:39:39.659 [main] INFO  com.api.filters.LoggingFilter - REQUEST Payload > {"username":"shraddha.qa","password":"Pass@12345"}
+17:39:40.002 [main] INFO  com.api.filters.LoggingFilter - BASE URI > 200
+17:39:40.002 [main] INFO  com.api.filters.LoggingFilter - Response Header > Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 10 Nov 2025 12:09:39 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+17:39:40.021 [main] INFO  com.api.filters.LoggingFilter - Response Body > {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHJhZGRoYS5xYSIsImlhdCI6MTc2Mjc3NjU3OSwiZXhwIjoxNzYyNzgwMTc5fQ.W5GIGUP9TrDmC7ndUuqNxi8A99Ub7seC-q41H-Xywpc",
+    "type": "Bearer",
+    "id": 2737,
+    "username": "shraddha.qa",
+    "email": "shraddha.st.qa@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+17:39:40.040 [main] INFO  com.api.listeners.TestListener - Passed>> loginTest
+17:39:40.041 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
+17:40:52.951 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+17:40:52.964 [main] INFO  com.api.listeners.TestListener - Started >> loginTest
+17:40:52.964 [main] INFO  com.api.listeners.TestListener - Description>> verify if login API is working 
+17:40:53.423 [main] INFO  com.api.filters.LoggingFilter - BASE URI > http://64.227.160.186:8080
+17:40:53.424 [main] INFO  com.api.filters.LoggingFilter - REQUEST HEADER > Accept=*/*
+Content-Type=application/json
+17:40:53.424 [main] INFO  com.api.filters.LoggingFilter - REQUEST Payload > {"username":"shraddha.qa","password":"Pass@12345"}
+17:40:53.812 [main] INFO  com.api.filters.LoggingFilter - Status Code > 200
+17:40:53.812 [main] INFO  com.api.filters.LoggingFilter - Response Header > Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 10 Nov 2025 12:10:53 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+17:40:53.828 [main] INFO  com.api.filters.LoggingFilter - Response Body > {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHJhZGRoYS5xYSIsImlhdCI6MTc2Mjc3NjY1MywiZXhwIjoxNzYyNzgwMjUzfQ.xs9nztUAYih3RxRdYTEbNg4ceZdvZxvZJTs1UeZ9bNM",
+    "type": "Bearer",
+    "id": 2737,
+    "username": "shraddha.qa",
+    "email": "shraddha.st.qa@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+17:40:53.847 [main] INFO  com.api.listeners.TestListener - Passed>> loginTest
+17:40:53.847 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
+17:41:14.932 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+17:41:14.946 [main] INFO  com.api.listeners.TestListener - Started >> loginTest
+17:41:14.946 [main] INFO  com.api.listeners.TestListener - Description>> verify if login API is working 
+17:41:15.402 [main] INFO  com.api.filters.LoggingFilter - BASE URI > http://64.227.160.186:8080
+17:41:15.402 [main] INFO  com.api.filters.LoggingFilter - REQUEST HEADER > Accept=*/*
+Content-Type=application/json
+17:41:15.402 [main] INFO  com.api.filters.LoggingFilter - REQUEST Payload > {"username":"shraddha.qa","password":"Pass@12345"}
+17:41:15.766 [main] INFO  com.api.filters.LoggingFilter - Status Code > 200
+17:41:15.767 [main] INFO  com.api.filters.LoggingFilter - Response Header > Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 10 Nov 2025 12:11:15 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+17:41:15.777 [main] INFO  com.api.filters.LoggingFilter - Response Body > {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHJhZGRoYS5xYSIsImlhdCI6MTc2Mjc3NjY3NSwiZXhwIjoxNzYyNzgwMjc1fQ.KFsquUJoNuQaxBXmGsfPhKfoqA5x-wgJPyx2qZv9B-E",
+    "type": "Bearer",
+    "id": 2737,
+    "username": "shraddha.qa",
+    "email": "shraddha.st.qa@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+17:41:15.796 [main] INFO  com.api.listeners.TestListener - Passed>> loginTest
+17:41:15.797 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
+18:01:00.799 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+18:01:00.815 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
+18:01:59.783 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+18:01:59.798 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
+18:02:31.626 [main] INFO  com.api.listeners.TestListener - Test Suite Started
+18:02:31.640 [TestNG-test-API Tests-1] INFO  com.api.listeners.TestListener - Started >> loginTest
+18:02:31.640 [TestNG-test-API Tests-1] INFO  com.api.listeners.TestListener - Description>> verify if login API is working 
+18:02:32.068 [TestNG-test-API Tests-1] INFO  com.api.filters.LoggingFilter - BASE URI > http://64.227.160.186:8080
+18:02:32.068 [TestNG-test-API Tests-1] INFO  com.api.filters.LoggingFilter - REQUEST HEADER > Accept=*/*
+Content-Type=application/json
+18:02:32.069 [TestNG-test-API Tests-1] INFO  com.api.filters.LoggingFilter - REQUEST Payload > {"username":"shraddha.qa","password":"Pass@12345"}
+18:02:32.446 [TestNG-test-API Tests-1] INFO  com.api.filters.LoggingFilter - Status Code > 200
+18:02:32.446 [TestNG-test-API Tests-1] INFO  com.api.filters.LoggingFilter - Response Header > Vary=Origin
+Vary=Access-Control-Request-Method
+Vary=Access-Control-Request-Headers
+Access-Control-Allow-Origin=https://swift.techwithjatin.com
+Access-Control-Allow-Methods=GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Max-Age=3600
+Access-Control-Allow-Headers=Authorization, Content-Type, Accept
+Access-Control-Allow-Credentials=true
+X-Content-Type-Options=nosniff
+X-XSS-Protection=0
+Cache-Control=no-cache, no-store, max-age=0, must-revalidate
+Pragma=no-cache
+Expires=0
+X-Frame-Options=DENY
+Content-Type=application/json
+Transfer-Encoding=chunked
+Date=Mon, 10 Nov 2025 12:32:32 GMT
+Keep-Alive=timeout=60
+Connection=keep-alive
+18:02:32.460 [TestNG-test-API Tests-1] INFO  com.api.filters.LoggingFilter - Response Body > {
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzaHJhZGRoYS5xYSIsImlhdCI6MTc2Mjc3Nzk1MiwiZXhwIjoxNzYyNzgxNTUyfQ.oP_bZpJOUQLiFaYgeJ62zkXe5qWYheNHaSQHK9s0Io4",
+    "type": "Bearer",
+    "id": 2737,
+    "username": "shraddha.qa",
+    "email": "shraddha.st.qa@gmail.com",
+    "roles": [
+        "ROLE_USER"
+    ]
+}
+18:02:32.480 [TestNG-test-API Tests-1] INFO  com.api.listeners.TestListener - Passed>> loginTest
+18:02:32.489 [main] INFO  com.api.listeners.TestListener - Test Suite Completed
